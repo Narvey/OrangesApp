@@ -5,6 +5,7 @@ import java.util.Random;
 import android.R.string;
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.Application;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -25,8 +26,9 @@ public class OrangePick extends Activity {
 		setContentView(R.layout.activity_main);
 		tree = new Orange[3];
 		FrameLayout frame = (FrameLayout) findViewById(R.id.framer);
-		for(Orange each : tree) {each = new Orange(this);
-		frame.addView(each);
+		for(Orange each : tree) {
+			each = new Orange(this);
+			frame.addView(each);
 		}
 	}
 
@@ -108,7 +110,7 @@ public class OrangePick extends Activity {
 
 		}
 
-		/* (non-Javadoc)
+		/**
 		 * Should draw the image based on it's current condition.
 		 * @see android.widget.View#onDraw(android.graphics.Canvas)
 		 */
