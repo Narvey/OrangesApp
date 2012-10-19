@@ -1,7 +1,8 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content" >
+    android:layout_height="wrap_content"
+    android:id="@+id/framer" >
 
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -17,7 +18,7 @@
             android:layout_centerHorizontal="true"
             android:contentDescription="basket"
             android:src="@drawable/basket"
-            tools:context=".MainActivity"
+            tools:context=".OrangePick"
             tools:ignore="HardcodedText" />
 
     </RelativeLayout>
@@ -36,7 +37,7 @@
             android:layout_centerHorizontal="true"
             android:contentDescription="front of basket"
             android:src="@drawable/basket_front"
-            tools:context=".MainActivity"
+            tools:context=".OrangePick"
             tools:ignore="HardcodedText" />
 
     </RelativeLayout>
