@@ -22,43 +22,6 @@
 
     </RelativeLayout>
 
-    <AbsoluteLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:ignore="Deprecated" >
-
-        <ImageButton
-            android:id="@+id/orange1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_x="114dp"
-            android:layout_y="66dp"
-            android:contentDescription="@string/orange"
-            android:onClick="MoveOrange"
-            android:src="@drawable/orange" />
-
-        <ImageButton
-            android:id="@+id/orange3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_x="58dp"
-            android:layout_y="148dp"
-            android:contentDescription="@string/orange"
-            android:onClick="MoveOrange"
-            android:src="@drawable/orange" />
-
-        <ImageButton
-            android:id="@+id/orange2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_x="146dp"
-            android:layout_y="397dp"
-            android:contentDescription="@string/orange"
-            android:onClick="MoveOrange"
-            android:src="@drawable/orange" />
-
-    </AbsoluteLayout>
-
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
