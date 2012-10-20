@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 
 public class OrangePick extends Activity {
 	private Orange[] tree;
@@ -127,7 +128,8 @@ public class OrangePick extends Activity {
 				// finger leaves the screen
 				if(moving)Log.v(TAG,"Orange dropped at ("+left+","+top+")");
 				moving = false;
-				if(top>510&&left>=150&&left<=275){
+				ImageView bskt= (ImageView) findViewById(R.id.back);
+				if(top>bskt.getTop()+70&&left>=bskt.getLeft()+30&&left<=bskt.getLeft()+125){
 					makePlaced();
 					done=true;
 				}else makeNormal();
